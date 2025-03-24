@@ -1,0 +1,52 @@
+[0.564s] Invoking command in '/uolstore/home/users/fy21jrz/ros2_ws/src/lab5': PS1=[COMP3631] Singularity> \w $ PYTHONPATH=/uolstore/home/users/fy21jrz/ros2_ws/src/lab5/build/lab5/prefix_override:/uolstore/home/users/fy21jrz/ros2_ws/src/lab5/install/lab5/lib/python3.10/site-packages: /usr/bin/python3 setup.py egg_info --egg-base build/lab5 build --build-base /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/build/lab5/build install --record /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/build/lab5/install.log --single-version-externally-managed
+[0.723s] running egg_info
+[0.723s] creating build/lab5/lab5.egg-info
+[0.725s] writing build/lab5/lab5.egg-info/PKG-INFO
+[0.730s] writing dependency_links to build/lab5/lab5.egg-info/dependency_links.txt
+[0.733s] writing entry points to build/lab5/lab5.egg-info/entry_points.txt
+[0.735s] writing requirements to build/lab5/lab5.egg-info/requires.txt
+[0.737s] writing top-level names to build/lab5/lab5.egg-info/top_level.txt
+[0.740s] writing manifest file 'build/lab5/lab5.egg-info/SOURCES.txt'
+[0.747s] reading manifest file 'build/lab5/lab5.egg-info/SOURCES.txt'
+[0.751s] writing manifest file 'build/lab5/lab5.egg-info/SOURCES.txt'
+[0.752s] running build
+[0.752s] running build_py
+[0.754s] creating /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/build/lab5/build
+[0.754s] creating /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/build/lab5/build/lib
+[0.755s] creating /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/build/lab5/build/lib/lab5
+[0.757s] copying lab5/Skeleton_Code_First_Step.py -> /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/build/lab5/build/lib/lab5
+[0.762s] copying lab5/Skeleton_Code_Fourth_Step.py -> /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/build/lab5/build/lib/lab5
+[0.766s] copying lab5/Skeleton_Code_Second_Step.py -> /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/build/lab5/build/lib/lab5
+[0.771s] copying lab5/Skeleton_Code_Third_Step.py -> /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/build/lab5/build/lib/lab5
+[0.775s] copying lab5/__init__.py -> /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/build/lab5/build/lib/lab5
+[0.779s] copying lab5/first_step.py -> /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/build/lab5/build/lib/lab5
+[0.783s] running install
+[0.783s] running install_lib
+[0.786s] creating /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/install/lab5/lib/python3.10/site-packages/lab5
+[0.788s] copying /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/build/lab5/build/lib/lab5/Skeleton_Code_First_Step.py -> /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/install/lab5/lib/python3.10/site-packages/lab5
+[0.793s] copying /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/build/lab5/build/lib/lab5/Skeleton_Code_Fourth_Step.py -> /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/install/lab5/lib/python3.10/site-packages/lab5
+[0.798s] copying /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/build/lab5/build/lib/lab5/Skeleton_Code_Second_Step.py -> /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/install/lab5/lib/python3.10/site-packages/lab5
+[0.804s] copying /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/build/lab5/build/lib/lab5/Skeleton_Code_Third_Step.py -> /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/install/lab5/lib/python3.10/site-packages/lab5
+[0.809s] copying /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/build/lab5/build/lib/lab5/__init__.py -> /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/install/lab5/lib/python3.10/site-packages/lab5
+[0.813s] copying /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/build/lab5/build/lib/lab5/first_step.py -> /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/install/lab5/lib/python3.10/site-packages/lab5
+[0.820s] byte-compiling /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/install/lab5/lib/python3.10/site-packages/lab5/Skeleton_Code_First_Step.py to Skeleton_Code_First_Step.cpython-310.pyc
+[0.826s] byte-compiling /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/install/lab5/lib/python3.10/site-packages/lab5/Skeleton_Code_Fourth_Step.py to Skeleton_Code_Fourth_Step.cpython-310.pyc
+[0.833s] byte-compiling /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/install/lab5/lib/python3.10/site-packages/lab5/Skeleton_Code_Second_Step.py to Skeleton_Code_Second_Step.cpython-310.pyc
+[0.838s] byte-compiling /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/install/lab5/lib/python3.10/site-packages/lab5/Skeleton_Code_Third_Step.py to Skeleton_Code_Third_Step.cpython-310.pyc
+[0.844s] byte-compiling /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/install/lab5/lib/python3.10/site-packages/lab5/__init__.py to __init__.cpython-310.pyc
+[0.848s] byte-compiling /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/install/lab5/lib/python3.10/site-packages/lab5/first_step.py to first_step.cpython-310.pyc
+[0.854s] running install_data
+[0.855s] creating /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/install/lab5/share/ament_index
+[0.856s] creating /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/install/lab5/share/ament_index/resource_index
+[0.857s] creating /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/install/lab5/share/ament_index/resource_index/packages
+[0.859s] copying resource/lab5 -> /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/install/lab5/share/ament_index/resource_index/packages
+[0.863s] copying package.xml -> /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/install/lab5/share/lab5
+[0.867s] running install_egg_info
+[0.870s] Copying build/lab5/lab5.egg-info to /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/install/lab5/lib/python3.10/site-packages/lab5-0.0.0-py3.10.egg-info
+[0.921s] running install_scripts
+[0.937s] Installing first_step script to /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/install/lab5/lib/lab5
+[0.941s] Installing fourth_step script to /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/install/lab5/lib/lab5
+[0.944s] Installing second_step script to /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/install/lab5/lib/lab5
+[0.947s] Installing third_step script to /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/install/lab5/lib/lab5
+[0.951s] writing list of installed files to '/uolstore/home/users/fy21jrz/ros2_ws/src/lab5/build/lab5/install.log'
+[0.969s] Invoked command in '/uolstore/home/users/fy21jrz/ros2_ws/src/lab5' returned '0': PS1=[COMP3631] Singularity> \w $ PYTHONPATH=/uolstore/home/users/fy21jrz/ros2_ws/src/lab5/build/lab5/prefix_override:/uolstore/home/users/fy21jrz/ros2_ws/src/lab5/install/lab5/lib/python3.10/site-packages: /usr/bin/python3 setup.py egg_info --egg-base build/lab5 build --build-base /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/build/lab5/build install --record /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/build/lab5/install.log --single-version-externally-managed

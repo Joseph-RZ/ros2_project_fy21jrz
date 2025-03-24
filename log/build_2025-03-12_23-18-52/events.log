@@ -1,0 +1,60 @@
+[0.000000] (-) TimerEvent: {}
+[0.000308] (lab5) JobQueued: {'identifier': 'lab5', 'dependencies': OrderedDict()}
+[0.000349] (lab5) JobStarted: {'identifier': 'lab5'}
+[0.098655] (-) TimerEvent: {}
+[0.199117] (-) TimerEvent: {}
+[0.299636] (-) TimerEvent: {}
+[0.400165] (-) TimerEvent: {}
+[0.500504] (-) TimerEvent: {}
+[0.600812] (-) TimerEvent: {}
+[0.701113] (-) TimerEvent: {}
+[0.801451] (-) TimerEvent: {}
+[0.901782] (-) TimerEvent: {}
+[1.002129] (-) TimerEvent: {}
+[1.102479] (-) TimerEvent: {}
+[1.202806] (-) TimerEvent: {}
+[1.303126] (-) TimerEvent: {}
+[1.403437] (-) TimerEvent: {}
+[1.503773] (-) TimerEvent: {}
+[1.604093] (-) TimerEvent: {}
+[1.689406] (lab5) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', 'build/lab5', 'build', '--build-base', '/uolstore/home/users/fy21jrz/ros2_ws/src/lab5/build/lab5/build', 'install', '--record', '/uolstore/home/users/fy21jrz/ros2_ws/src/lab5/build/lab5/install.log', '--single-version-externally-managed'], 'cwd': '/uolstore/home/users/fy21jrz/ros2_ws/src/lab5', 'env': {'LESSOPEN': '||/usr/bin/lesspipe.sh %s', 'LMOD_DIR': '/usr/share/lmod/lmod/libexec', 'MAIL': '/var/spool/mail/fy21jrz', 'USER': 'fy21jrz', 'HOSTNAME': 'feng-glinux-02.leeds.ac.uk', 'XDG_SESSION_TYPE': 'x11', 'LMOD_PKG': '/usr/share/lmod/lmod', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/.singularity.d/libs:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:', 'HOME': '/uolstore/home/users/fy21jrz', 'OLDPWD': '/uolstore/home/users/fy21jrz/ros2_ws', 'DESKTOP_SESSION': 'gnome', 'USER_PATH': '/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/opt/puppetlabs/bin:/uolstore/home/users/fy21jrz/.local/bin:/uolstore/home/users/fy21jrz/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/local/sbin', 'GAZEBO_MASTER_URI': 'http://localhost:11345', 'ROS_PYTHON_VERSION': '3', 'FPATH': '/usr/share/lmod/lmod/init/ksh_funcs', 'PS1': '[COMP3631] Singularity> \\w $', 'DBUS_SESSION_BUS_ADDRESS': 'unix:abstract=/tmp/dbus-VG1CBp38qD,guid=6505885f62e1ab27162c258867d20eea', 'COLORTERM': 'truecolor', 'APPTAINER_ENVIRONMENT': '/.singularity.d/env/91-environment.sh', 'LMOD_sys': 'Linux', 'which_declare': 'declare -f', 'COLCON_PREFIX_PATH': '/uolstore/home/users/fy21jrz/ros2_ws/install', 'ROS_DISTRO': 'humble', 'SINGULARITY_ENVIRONMENT': '/.singularity.d/env/91-environment.sh', 'LOGNAME': 'fy21jrz', 'LMOD_VERSION': '8.7.55', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'fy21jrz', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/usr/share/gazebo-11/models:', 'ROS_LOCALHOST_ONLY': '1', 'HISTCONTROL': 'ignoredups', 'OGRE_RESOURCE_PATH': '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'GDM_LANG': 'en_GB.UTF-8', 'APPTAINER_COMMAND': 'shell', 'LMOD_SETTARG_FULL_SUPPORT': 'no', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/5db58024_55d9_4495_aac3_82a3887a6f70', 'XDG_RUNTIME_DIR': '/run/user/556207', 'GDK_BACKEND': 'x11', 'DISPLAY': ':2', 'HISTSIZE': '1000', 'APPTAINER_APPNAME': '', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'GNOME', 'LMOD_ROOT': '/usr/share/lmod', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'gnome', 'XAUTHORITY': '/run/gdm/auth-for-fy21jrz-DX7822/database', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.m4a=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.oga=01;36:*.opus=01;36:*.spx=01;36:*.xspf=01;36:', 'GNOME_TERMINAL_SERVICE': ':1.63', 'ROS_DOMAIN_ID': '30', 'AMENT_PREFIX_PATH': '/uolstore/home/users/fy21jrz/ros2_ws/install/turtlebot3_simulations:/uolstore/home/users/fy21jrz/ros2_ws/install/turtlebot3_gazebo:/uolstore/home/users/fy21jrz/ros2_ws/install/turtlebot3_fake_node:/uolstore/home/users/fy21jrz/ros2_ws/install/lab6:/uolstore/home/users/fy21jrz/ros2_ws/install/lab5:/uolstore/home/users/fy21jrz/ros2_ws/install/lab4:/uolstore/home/users/fy21jrz/ros2_ws/install/lab3:/uolstore/home/users/fy21jrz/ros2_ws/install/lab2:/opt/ros/humble', 'SHELL': '/bin/bash', 'KRB5CCNAME': 'KEYRING:persistent:556207', 'MODULEPATH_ROOT': '/usr/share/modulefiles', 'GDMSESSION': 'gnome', 'APPTAINER_CONTAINER': '/vol/scratch/SoC/COMP3631/comp3631.simg', 'APPTAINER_BIND': '/run/user/556207,/etc/localtime', 'LMOD_CMD': '/usr/share/lmod/lmod/libexec/lmod', 'GAZEBO_RESOURCE_PATH': '/usr/share/gazebo-11:', 'GAZEBO_MODEL_DATABASE_URI': 'http://models.gazebosim.org', 'SINGULARITY_CONTAINER': '/vol/scratch/SoC/COMP3631/comp3631.simg', 'BASH_ENV': '/usr/share/lmod/lmod/init/bash', 'QT_IM_MODULE': 'ibus', 'SINGULARITY_BIND': '/run/user/556207,/etc/localtime', 'PWD': '/uolstore/home/users/fy21jrz/ros2_ws/src/lab5/build/lab5', 'TURTLEBOT3_MODEL': 'burger', 'APPTAINER_NAME': 'comp3631.simg', 'GAZEBO_PLUGIN_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:', 'XDG_DATA_DIRS': '/uolstore/home/users/fy21jrz/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share', 'PYTHONPATH': '/uolstore/home/users/fy21jrz/ros2_ws/src/lab5/build/lab5/prefix_override:/uolstore/home/users/fy21jrz/ros2_ws/src/lab5/install/lab5/lib/python3.10/site-packages:/uolstore/home/users/fy21jrz/ros2_ws/install/lab6/lib/python3.10/site-packages:/uolstore/home/users/fy21jrz/ros2_ws/install/lab5/lib/python3.10/site-packages:/uolstore/home/users/fy21jrz/ros2_ws/install/lab4/lib/python3.10/site-packages:/uolstore/home/users/fy21jrz/ros2_ws/install/lab3/lib/python3.10/site-packages:/uolstore/home/users/fy21jrz/ros2_ws/install/lab2/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'SINGULARITY_NAME': 'comp3631.simg', 'COLCON': '1', 'MANPATH': '/usr/share/lmod/lmod/share/man::/opt/puppetlabs/puppet/share/man', 'VTE_VERSION': '6402', 'MODULEPATH': '/etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/modulefiles:/uollinapps/v2/current/uol/spack/el9/Core:/uollinapps/v2/current/uol/other/el9:/uollinapps/v2/current/soc/spack/el9/Core:/uollinapps/v2/current/soc/other:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core', 'MODULESHOME': '/usr/share/Modules', 'CMAKE_PREFIX_PATH': '/uolstore/home/users/fy21jrz/ros2_ws/install/turtlebot3_simulations:/uolstore/home/users/fy21jrz/ros2_ws/install/turtlebot3_gazebo:/uolstore/home/users/fy21jrz/ros2_ws/install/turtlebot3_fake_node'}, 'shell': False}
+[1.704169] (-) TimerEvent: {}
+[1.804436] (-) TimerEvent: {}
+[1.904764] (-) TimerEvent: {}
+[2.005081] (-) TimerEvent: {}
+[2.105391] (-) TimerEvent: {}
+[2.172540] (lab5) StdoutLine: {'line': b'running egg_info\n'}
+[2.173475] (lab5) StdoutLine: {'line': b'writing build/lab5/lab5.egg-info/PKG-INFO\n'}
+[2.177099] (lab5) StdoutLine: {'line': b'writing dependency_links to build/lab5/lab5.egg-info/dependency_links.txt\n'}
+[2.181462] (lab5) StdoutLine: {'line': b'writing entry points to build/lab5/lab5.egg-info/entry_points.txt\n'}
+[2.183982] (lab5) StdoutLine: {'line': b'writing requirements to build/lab5/lab5.egg-info/requires.txt\n'}
+[2.185975] (lab5) StdoutLine: {'line': b'writing top-level names to build/lab5/lab5.egg-info/top_level.txt\n'}
+[2.193134] (lab5) StdoutLine: {'line': b"reading manifest file 'build/lab5/lab5.egg-info/SOURCES.txt'\n"}
+[2.197977] (lab5) StdoutLine: {'line': b"writing manifest file 'build/lab5/lab5.egg-info/SOURCES.txt'\n"}
+[2.199963] (lab5) StdoutLine: {'line': b'running build\n'}
+[2.200077] (lab5) StdoutLine: {'line': b'running build_py\n'}
+[2.204565] (lab5) StdoutLine: {'line': b'copying lab5/first_step.py -> /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/build/lab5/build/lib/lab5\n'}
+[2.205442] (-) TimerEvent: {}
+[2.208673] (lab5) StdoutLine: {'line': b'copying lab5/second_step.py -> /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/build/lab5/build/lib/lab5\n'}
+[2.211722] (lab5) StdoutLine: {'line': b'running install\n'}
+[2.212091] (lab5) StdoutLine: {'line': b'running install_lib\n'}
+[2.216856] (lab5) StdoutLine: {'line': b'copying /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/build/lab5/build/lib/lab5/first_step.py -> /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/install/lab5/lib/python3.10/site-packages/lab5\n'}
+[2.221527] (lab5) StdoutLine: {'line': b'copying /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/build/lab5/build/lib/lab5/second_step.py -> /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/install/lab5/lib/python3.10/site-packages/lab5\n'}
+[2.230622] (lab5) StdoutLine: {'line': b'byte-compiling /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/install/lab5/lib/python3.10/site-packages/lab5/first_step.py to first_step.cpython-310.pyc\n'}
+[2.237408] (lab5) StdoutLine: {'line': b'byte-compiling /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/install/lab5/lib/python3.10/site-packages/lab5/second_step.py to second_step.cpython-310.pyc\n'}
+[2.242308] (lab5) StdoutLine: {'line': b'running install_data\n'}
+[2.248253] (lab5) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.253430] (lab5) StdoutLine: {'line': b"removing '/uolstore/home/users/fy21jrz/ros2_ws/src/lab5/install/lab5/lib/python3.10/site-packages/lab5-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[2.261187] (lab5) StdoutLine: {'line': b'Copying build/lab5/lab5.egg-info to /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/install/lab5/lib/python3.10/site-packages/lab5-0.0.0-py3.10.egg-info\n'}
+[2.296230] (lab5) StdoutLine: {'line': b'running install_scripts\n'}
+[2.305519] (-) TimerEvent: {}
+[2.326478] (lab5) StdoutLine: {'line': b'Installing first_step script to /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/install/lab5/lib/lab5\n'}
+[2.330983] (lab5) StdoutLine: {'line': b'Installing fourth_step script to /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/install/lab5/lib/lab5\n'}
+[2.334409] (lab5) StdoutLine: {'line': b'Installing second_step script to /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/install/lab5/lib/lab5\n'}
+[2.338202] (lab5) StdoutLine: {'line': b'Installing third_step script to /uolstore/home/users/fy21jrz/ros2_ws/src/lab5/install/lab5/lib/lab5\n'}
+[2.341925] (lab5) StdoutLine: {'line': b"writing list of installed files to '/uolstore/home/users/fy21jrz/ros2_ws/src/lab5/build/lab5/install.log'\n"}
+[2.377588] (lab5) CommandEnded: {'returncode': 0}
+[2.405632] (-) TimerEvent: {}
+[2.505975] (-) TimerEvent: {}
+[2.537198] (lab5) JobEnded: {'identifier': 'lab5', 'rc': 0}
+[2.543470] (-) EventReactorShutdown: {}
