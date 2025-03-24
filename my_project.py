@@ -48,6 +48,8 @@ class BlueApproachNode(Node):
         self.distance_factor = 500.0
         self.target_distance = 1.0
         self.sensitivity = 20
+        self.scanning_duration = 20.0
+        self.scanning_start_time = None
 
         # Constantly track blue object
         self.blue_detected = False
@@ -57,6 +59,9 @@ class BlueApproachNode(Node):
 
         # Immediately send a single navigation goal that is a strategic position to visualise all colours. 
         self.send_nav_goal(1.23, -10.2, 0.0)
+
+        # Added: display initial mode
+        self.get_logger().info("BlueApproachNode started. Mode: NAVIGATING")
 
     def send_nav_goal(self, x, y, yaw):
         goal_msg = NavigateToPose.Goal()
@@ -94,6 +99,10 @@ class BlueApproachNode(Node):
     def get_result_callback(self, _):
         self.currently_navigating = False
         self.get_logger().info("Nav2 goal finished.")
+        # Begin 360 scan
+        self.mode = "SCANNING"
+        self.scanning_start_time = time.time()
+        self.get_logger().info("Reached navigation goal. Starting full 360° scan (SCANNING mode).")
 
     def feedback_callback(self, _):
         pass
@@ -128,7 +137,7 @@ class BlueApproachNode(Node):
         self.blue_area = area_blue
         self.blue_center = center_blue
 
-        # If in NAVIGATING mode and blue is found, switch from NAVIGATING (cancel current navigation) to ORIENTING mode (run until blue is found or time limit is elapsed).
+        # If in NAVIGATING mode and blue is found, switch from NAVIGATING (cancel current navigation) to ORIENTING mode.
         if self.mode == "NAVIGATING" and self.blue_detected:
             self.get_logger().info("Blue detected! Cancelling nav and orienting.")
             if self.currently_navigating and self.goal_handle is not None:
@@ -137,12 +146,18 @@ class BlueApproachNode(Node):
             self.mode = "ORIENTING"
             self.orienting_start_time = time.time()
 
-        # When in ORIENTING mode, keep orienting until blue is centered within the tolerance specified in the parameters.
         if self.mode == "ORIENTING":
             self.handle_orienting(frame)
-        # After blue is centred, the mode will become APPROACHING, which will approach the robot towards the blue box and stop when 1 meter away.
         elif self.mode == "APPROACHING":
             self.handle_approaching()
+        elif self.mode == "SCANNING":
+            if self.blue_detected:
+                self.get_logger().info("BLUE detected! Cancelling current commands and switching to ORIENTING mode.")
+                self.mode = "ORIENTING"
+                self.orienting_start_time = time.time()
+                self.send_cmd_vel(0.0, 0.0)
+            else:
+                self.handle_scanning()
 
         cv2.imshow("Camera", frame)
         cv2.waitKey(3)
@@ -155,43 +170,50 @@ class BlueApproachNode(Node):
         offset = bx - midpoint
 
         if not self.blue_detected:
-            # Keep rotating in place if blue is lost
             self.send_cmd_vel(0.0, self.rotate_speed)
+            self.get_logger().info("Blue lost during orienting. Continuing spin...")
             return
 
         if abs(offset) < self.center_tolerance:
-            # Blue is centered
             self.send_cmd_vel(0.0, 0.0)
             self.mode = "APPROACHING"
-            self.get_logger().info("Blue centered. Switching to APPROACHING.")
+            self.get_logger().info("Blue is centered. Switching to APPROACHING mode.")
             return
 
         elapsed = time.time() - self.orienting_start_time
         if elapsed > self.orientation_timeout:
-            # Time limit reached, approach anyway
             self.send_cmd_vel(0.0, 0.0)
             self.mode = "APPROACHING"
-            self.get_logger().info("Orientation timeout. Approaching anyway.")
+            self.get_logger().info("Orientation time limit reached. Switching to APPROACHING mode.")
         else:
-            # Turn in place
             self.send_cmd_vel(0.0, self.rotate_speed)
+            self.get_logger().info(f"ORIENTING... offset = {offset}; elapsed: {elapsed:.1f}s")
 
     def handle_approaching(self):
-        # Keep moving forward until the blue box is 1 meter away.
         if not self.blue_detected or self.blue_area < 1:
-            # If we lose it, stop
             self.send_cmd_vel(0.0, 0.0)
-            self.get_logger().info("Lost blue object. Stopping.")
+            self.get_logger().info("Blue lost during approach. Holding position.")
             return
 
         distance_est = self.distance_factor / math.sqrt(self.blue_area)
+        self.get_logger().info(f"Approaching: estimated distance ~ {distance_est:.2f} m")
+
         if distance_est <= self.target_distance:
-            # Reached the blue object (1m away).
             self.send_cmd_vel(0.0, 0.0)
             self.mode = "GOAL_REACHED"
             self.get_logger().info("Close to blue. Goal reached.")
         else:
             self.send_cmd_vel(self.forward_speed, 0.0)
+
+    def handle_scanning(self):
+        elapsed = time.time() - self.scanning_start_time
+        if elapsed < self.scanning_duration:
+            self.send_cmd_vel(0.0, self.rotate_speed)
+            self.get_logger().info(f"Scanning... elapsed time: {elapsed:.1f}s")
+        else:
+            self.send_cmd_vel(0.0, 0.0)
+            self.get_logger().info("Full 360° scan complete with no blue detected.")
+            self.mode = "NAVIGATING"
 
     def send_cmd_vel(self, linear, angular):
         twist = Twist()
